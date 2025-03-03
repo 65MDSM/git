@@ -1,0 +1,19 @@
+brew install git
+sudo apt install git  # (Debian/Ubuntu)
+sudo yum install git  # (CentOS)
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+git init my-project
+cd my-project
+git clone https://github.com/username/repository-name.git
+cd repository-name
+git add .       # Adds all changes to staging
+git commit -m "Your commit message"
+git push origin main
+git remote add origin https://github.com/username/repository-name.git
+git branch -M main
+git push -u origin main
+git pull origin main
+git checkout -b new-feature   # Create and switch to a new branch
+git checkout main             # Switch back to main branch
+git merge new-feature         # Merge new branch into main
